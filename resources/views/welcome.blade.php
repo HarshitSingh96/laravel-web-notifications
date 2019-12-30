@@ -24,12 +24,14 @@
           </button>
           <a class="navbar-brand" href="#">Demo App</a>
         </div>
+
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="dropdown dropdown-notifications">
               <a href="#notifications-panel" class="dropdown-toggle" data-toggle="dropdown">
                 <i data-count="0" class="glyphicon glyphicon-bell notification-icon"></i>
               </a>
+
               <div class="dropdown-container">
                 <div class="dropdown-toolbar">
                   <div class="dropdown-toolbar-actions">
@@ -50,9 +52,11 @@
         </div>
       </div>
     </nav>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="//js.pusher.com/3.1/pusher.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <script type="text/javascript">
       var notificationsWrapper   = $('.dropdown-notifications');
       var notificationsToggle    = notificationsWrapper.find('a[data-toggle]');
@@ -64,7 +68,7 @@
       }
       // Enable pusher logging - don't include this in production
       // Pusher.logToConsole = true;
-      var pusher = new Pusher('API_KEY_HERE', {
+      var pusher = new Pusher('71adc3ac3897516dbe82', {
         encrypted: true
       });
       // Subscribe to the channel we specified in our Laravel Event
